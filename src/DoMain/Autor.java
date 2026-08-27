@@ -5,7 +5,7 @@ public class Autor {
     private String nacionalidade;
     private Livro[] livros;
 
-    public Autor(String nacionalidade, String nome) {
+    public Autor(String nome, String nacionalidade ) {
         this.nacionalidade = nacionalidade;
         this.nome = nome;
     }
@@ -30,5 +30,13 @@ public class Autor {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public Livro[] getLivros() {
+        return livros;
+    }
+
+    public void setLivros(Livro[] livros) {
+        this.livros = livros;
     }
 }
